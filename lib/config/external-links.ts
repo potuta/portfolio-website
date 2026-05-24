@@ -9,5 +9,6 @@ export const LINKS = {
     taskmanager: "https://github.com/potuta/task_manager",
     beerpong: "https://lesserdev.itch.io/beer-pong",
     skatechase: "https://github.com/potuta/Skate-Chase",
+    skatechaseplay: "https://potuta.github.io/Skate-Chase/",
     turtlegame: "https://github.com/potuta/Simple-Python-Turtle-Game"
 }

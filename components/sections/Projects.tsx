@@ -145,46 +145,143 @@ export default function Projects() {
                         Games
                     </div> 
 
-                    <div className="grid md:grid-cols-3 gap-10">
+                    <div className="grid md:grid-cols-3 gap-6">
                         <Card className="rounded-2xl shadow p-8 gap-2">
-                            <div className="relative group w-full rounded-xl overflow-hidden transition-all duration-500 h-64 hover:h-[600px]">
+                            <div className="relative group w-full rounded-xl overflow-hidden transition-all duration-500 h-64 ">
                                 <Image
-                                    src="/media/school-enrollment-system.gif"
+                                    src="/media/beer-pong.gif"
                                     priority
                                     width={800}
                                     height={450}
                                     alt="Cortex Path"
                                     className="w-full h-full object-cover"
+                                    unoptimized
                                 />
 
-                                <div className="absolute top-3 right-3 bg-black/50 p-1.5 rounded-md">
+                                {/* <div className="absolute top-3 right-3 bg-black/50 p-1.5 rounded-md">
                                     <Maximize2 className="w-4 h-4 text-white" />
-                                </div>
+                                </div> */}
                             </div>
                             <div className="flex items-center justify-between">
                                 <div className="md:text-xl font-bold mt-6">
                                     Beer Pong Multiplayer Game
                                 </div> 
-                                <div className="flex items-center justify-center">
-                                    <Link href={LINKS.enrollmentsystem} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                {/* <div className="flex items-center justify-center">
+                                    <Link href={LINKS.beerpong} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                        <ExternalLink className="w-4 h=4" />
+                                        Play
+                                    </Link>
+                                </div> */}
+                            </div>
+                            <div className="flex gap-2">
+                                <Badge variant="default">Unity</Badge>
+                                <Badge variant="default">C#</Badge>
+                                <Badge variant="default">Blender</Badge>
+                            </div> 
+                            <div className="space-y-2 mt-4 mb-4">
+                                <p className="text-sm">
+                                    A Beer Pong game built in Unity for our finals project in Game Development. Includes a
+                                    multiplayer feature for 1v1 player-versus-player gameplay, implemented game
+                                    networking & synchronization, matchmaking systems, and optimized performance for
+                                    online interaction.
+                                </p>
+                            </div>
+                            <Link href={LINKS.beerpong} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                <ExternalLink className="w-4 h=4" />
+                                Play on Itch.io
+                            </Link>
+                        </Card>  
+                        <Card className="rounded-2xl shadow p-8 gap-2">
+                            <div className="relative group w-full rounded-xl overflow-hidden transition-all duration-500 h-64 ">
+                                <Image
+                                    src="/media/skate-chase.gif"
+                                    priority
+                                    width={800}
+                                    height={450}
+                                    alt="Cortex Path"
+                                    className="w-full h-full object-cover"
+                                    unoptimized
+                                />
+
+                                {/* <div className="absolute top-3 right-3 bg-black/50 p-1.5 rounded-md">
+                                    <Maximize2 className="w-4 h-4 text-white" />
+                                </div> */}
+                            </div>
+
+                            <div className="flex items-center justify-between">
+                                <div className="md:text-xl font-bold mt-6">
+                                    Skate Chase
+                                </div> 
+                                {/* <div className="flex items-center justify-center">
+                                    <Link href={LINKS.skatechase} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
                                         <ExternalLink className="w-4 h=4" />
                                         View Source
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="flex gap-2">
-                                <Badge variant="default">.Net Framework</Badge>
-                                <Badge variant="default">Windows Forms</Badge>
+                                <Badge variant="default">Unity</Badge>
                                 <Badge variant="default">C#</Badge>
-                                <Badge variant="default">MSSQL</Badge>
                             </div> 
-                            <div className="space-y-2 mt-4">
-                                <p className="text-sm text-justify">
-                                    A School Enrollment System we made for our 3rd year school project in IT at STI College Ortigas-Cainta. 
-                                    This project thought me the most about software engineering principles, systems architecture, database design and management through building a functional end-to-end Transactional Processing System
-                                    with PDF & Excel Conversion, User & Role Management, Database Backup & Restore, and System Logs/Audit Trail. 
+                            <div className="space-y-2 mt-4 mb-4">
+                                <p className="text-sm">
+                                    A simple skateboard chasing game where you run away from a dog and jump over obstacles in your way.
                                 </p>
                             </div>
+
+                            <Link href={LINKS.skatechaseplay} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                <ExternalLink className="w-4 h=4" />
+                                Play on Browser
+                            </Link>
+
+                            <Link href={LINKS.skatechase} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                <ExternalLink className="w-4 h=4" />
+                                View Source
+                            </Link>
+                        </Card>  
+
+                        <Card className="rounded-2xl shadow p-8 gap-2">
+                            <div className="relative group w-full rounded-xl overflow-hidden transition-all duration-500 h-64 ">
+                                <Image
+                                    src="/media/turtle-game.gif"
+                                    priority
+                                    width={800}
+                                    height={450}
+                                    alt="Cortex Path"
+                                    className="w-full h-full object-cover"
+                                    unoptimized
+                                />
+
+                                {/* <div className="absolute top-3 right-3 bg-black/50 p-1.5 rounded-md">
+                                    <Maximize2 className="w-4 h-4 text-white" />
+                                </div> */}
+                            </div>
+
+                            <div className="flex items-center justify-between">
+                                <div className="md:text-xl font-bold mt-6">
+                                    Turtle Game
+                                </div> 
+                                {/* <div className="flex items-center justify-center">
+                                    <Link href={LINKS.skatechase} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                        <ExternalLink className="w-4 h=4" />
+                                        View Source
+                                    </Link>
+                                </div> */}
+                            </div>
+                            <div className="flex gap-2">
+                                <Badge variant="default">Python</Badge>
+                            </div> 
+                            <div className="space-y-2 mt-4 mb-4">
+                                <p className="text-sm ">
+                                    This is just a very simple turtle game I made for our school task performance in Computer Graphics Programming.
+                                </p>
+                            </div>
+
+                            <Link href={LINKS.turtlegame} target="_blank" rel="noopener noreferrer" className={buttonVariants({variant: "secondary"})}>
+                                <ExternalLink className="w-4 h=4" />
+                                View Source
+                            </Link>
+                            
                         </Card>  
                     </div>
                 </section>
