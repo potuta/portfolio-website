@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "motion/react";
 import { Card } from "../ui/card";
 
 export default function Work() {
@@ -44,7 +43,7 @@ export default function Work() {
 
                                 <li className="flex items-start gap-2">
                                     <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                                    <span className="text-sm">
+                                    <span className="text-sm text-justify">
                                         Developed ABAP programs using Object-Oriented ABAP, ALV Reports, Function Modules,
                                         in classical and modern ABAP programming.
                                     </span>
@@ -52,7 +51,7 @@ export default function Work() {
 
                                 <li className="flex items-start gap-2">
                                     <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                                    <span className="text-sm">
+                                    <span className="text-sm text-justify">
                                         Built modern SAP applications in BTP environment using ABAP Development Tools (ADT)
                                         in Eclipse, including CDS Views, OData Services, and RESTful ABAP Programming Model
                                         (RAP).
@@ -61,7 +60,7 @@ export default function Work() {
 
                                 <li className="flex items-start gap-2">
                                     <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                                    <span className="text-sm">
+                                    <span className="text-sm text-justify">
                                         Collaborated in a team-based capstone case study, managing full development lifecycle
                                         from requirements analysis to delivery, debugging, testing, and transport management.
                                     </span>
