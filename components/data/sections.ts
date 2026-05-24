@@ -2,7 +2,6 @@ export const sections = [
   { id: "about", label: "About Me" },
   { id: "work", label: "Work History" },
   { id: "projects", label: "Projects" },
-  { id: "achievements", label: "Achievements" },
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
 ]

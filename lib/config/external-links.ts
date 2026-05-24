@@ -1,7 +1,7 @@
 export const LINKS = {
     github: "https://github.com/potuta",
     linkedin: "https://www.linkedin.com/in/cyril-bautista-a7ab123a5/",
-    email: "cyrilbautista2@gmail.com",
+    email: "mailto:cyrilbautista2@gmail.com",
     itchio: "https://lesserdev.itch.io/",
     cortexpath: "https://github.com/potuta/cortex-path",
     nch: "https://github.com/potuta/LittleArkFoundation_SocialService_InfoManageSystem",

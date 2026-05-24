@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/blocks/navbar";
+import Contact from "@/components/sections/Contact";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -45,6 +46,9 @@ export default function RootLayout({
             </div>
             {children}
         </ThemeProvider>
+        <footer>
+          <Contact />
+        </footer>
       </body>
     </html>
   );

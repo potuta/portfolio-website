@@ -135,7 +135,7 @@ export default function Projects() {
                         <div className="space-y-2 mt-4">
                             <p className="text-sm text-justify">
                                 A School Enrollment System we made for our 3rd year school project in IT at STI College Ortigas-Cainta. 
-                                This project thought me the most about software engineering principles, systems architecture, database design and management through building a functional end-to-end Transactional Processing System
+                                This project taught me the most about software engineering principles, systems architecture, database design and management through building a functional end-to-end Transactional Processing System
                                 with PDF & Excel Conversion, User & Role Management, Database Backup & Restore, and System Logs/Audit Trail. 
                             </p>
                         </div>
