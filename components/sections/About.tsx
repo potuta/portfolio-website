@@ -2,11 +2,15 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { User } from "lucide-react";
+import { SendHorizonal, User } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { scrollToSection } from "../data/sections";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { LINKS } from "@/lib/config/external-links";
+import Link from "next/link";
+import { HiOutlineMail } from "react-icons/hi";
 
 export default function About() {
     const [techStackState, toggleTechStack] = useState('current')
@@ -72,9 +76,23 @@ export default function About() {
                                     I am also interested in Unity game development which allows me to strengthen my problem-solving abilities and deepen my understanding of programming.
                                 </div>
 
-                                <Button className="font-bold" size="lg" variant="outline" onClick={() => scrollToSection('contact')}>
-                                    <User /> Contact
-                                </Button>
+                                <div className="flex items-center gap-6">
+                                    <Link href={LINKS.github} target="_blank" rel="noopener noreferrer">
+                                        <FaGithub size={22} />
+                                    </Link>
+
+                                    <Link href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
+                                        <FaLinkedin size={22} />
+                                    </Link>
+
+                                    <Link href={LINKS.email} target="_blank" rel="noopener noreferrer">
+                                        <HiOutlineMail size={22} />
+                                    </Link>
+                                    <Button className="font-bold" size="lg" variant="outline" onClick={() => scrollToSection('contact')}>
+                                        <SendHorizonal /> Send a Message
+                                    </Button>
+                                </div>
+
                             </motion.div>
                            
                         </div>
