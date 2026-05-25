@@ -4,11 +4,7 @@ A passionate full-stack developer focused on building clean, modern, and interac
 
 This is my personal portfolio, a space where I showcase my work, skills, and the things I’m currently learning and building.
 
----
-
-## 🌐 Live Website
-
-https://your-portfolio-link.com
+### 🌐 Live Website: https://cyril-bautista.vercel.app/
 
 ---
 
@@ -22,7 +18,7 @@ It’s designed to feel smooth and modern with animations, scroll-based interact
 
 ## 📸 Preview
 
-![Portfolio Preview](./public/preview.gif)
+<img width="800" height="450" alt="ezgif-3ab1c79b87b16dbc" src="https://github.com/user-attachments/assets/8f135c59-596e-4b3a-bf95-048bd142a653" />
 
 ---
 
