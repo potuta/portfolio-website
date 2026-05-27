@@ -11,7 +11,6 @@ interface ReCAPTCHAFieldProps {
 export const ReCAPTCHAField = forwardRef<ReCAPTCHA, ReCAPTCHAFieldProps>(
   ({ onChange }, ref) => {
     const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
-    console.log("site key: ", siteKey)
 
     if (!siteKey) {
       console.error("reCAPTCHA Site Key is missing from environment variables.");

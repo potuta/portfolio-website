@@ -12,7 +12,6 @@ import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { notification } from "@/lib/alerts/notification";
 import { ReCAPTCHAField } from "../client-services/recaptcha-field";
-import { verifyReCAPTCHA } from "@/lib/services/recaptcha";
 import { validateHumanRequest } from "@/app/auth/security-actions";
 
 export default function ContactForm(){
