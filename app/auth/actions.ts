@@ -15,15 +15,32 @@ export async function onSendEmail(values: z.infer<typeof ContactFormSchema>){
         message: values.message
     }
 
-    await emailjs.send(EMAILSERVICE.service_id, EMAILSERVICE.service_template_id, templateParams).then(
-        (response) => {
-            notification({type: "success", message: "Email sent successfully!"});
-            console.log('SUCCESS!', response.status, response.text);
-        },
-        (error) => {
-            notification({type: "error", message: "Something went wrong. Try again later."});
-            console.log('FAILED...', error);
-        },
-    );
+    try{
+        const response = await emailjs.send(
+            EMAILSERVICE.service_id, 
+            EMAILSERVICE.service_template_id, 
+            templateParams
+        );
+
+        // await emailjs.send(EMAILSERVICE.service_id, EMAILSERVICE.service_template_id, templateParams).then(
+        //     (response) => {
+        //         notification({type: "success", message: "Email sent successfully!"});
+        //         console.log('SUCCESS!', response.status, response.text);
+        //         return {success: true}
+        //     },
+        //     (error) => {
+        //         notification({type: "error", message: error});
+        //         console.log('FAILED...', error);
+        //         return {error: error}
+        //     },
+        // );
+
+        notification({type: "success", message: "Email sent successfully!"});
+        return {success: true}
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any){
+        notification({type: "error", message: error});
+        return {error: error?.text || "Failed to send email"}
+    }
 
 }

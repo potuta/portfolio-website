@@ -8,6 +8,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import { onSendEmail } from "@/app/auth/actions";
 import { Textarea } from "../ui/textarea";
+import { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import { notification } from "@/lib/alerts/notification";
+import { ReCAPTCHAField } from "../client-services/recaptcha-field";
+import { verifyReCAPTCHA } from "@/lib/services/recaptcha";
+import { validateHumanRequest } from "@/app/auth/security-actions";
 
 export default function ContactForm(){
     const form = useForm({
@@ -20,8 +26,36 @@ export default function ContactForm(){
         }
     })
 
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const onSubmit = async (data: any) => {
+        if (!captchaToken) return notification({type: "warning", message: "Please verify you are human!"});
+
+        try{
+            const validateRequest = await validateHumanRequest(captchaToken); 
+            if (!validateRequest) return notification({type: "error", message: validateRequest });
+    
+            const emailResponse = await onSendEmail(data);
+    
+            if (emailResponse?.error){
+                return notification({ type: "error", message: emailResponse.error });
+            }
+    
+            // Reset after successful submission
+            form.reset();
+            recaptchaRef.current?.reset();
+            setCaptchaToken(null);
+
+        } catch (error) {
+            notification({ type: "error", message: "An unexpected network error occurred." });
+        }
+    }
+
     return (
-        <form onSubmit={form.handleSubmit(onSendEmail)}>
+        // eslint-disable-next-line react-hooks/refs
+        <form onSubmit={form.handleSubmit(onSubmit)}>
             <FieldGroup className="gap-y-6">
                 <Controller 
                     name="name" 
@@ -75,6 +109,9 @@ export default function ContactForm(){
                         </Field>
                 )}/>
 
+                <div className="flex items-center justify-center">
+                    <ReCAPTCHAField ref={recaptchaRef} onChange={setCaptchaToken} />
+                </div>
 
                 <Button type="submit" disabled={form.formState.isSubmitting}>
                     {form.formState.isSubmitting ? (
