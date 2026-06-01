@@ -45,9 +45,9 @@ export default function Education() {
                         Certifications 
                     </div> 
 
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className="grid md:grid-cols-2 gap-6">
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/ojt-coc.png"
                                     alt="OJT COC"
@@ -63,7 +63,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/devkada-cop.png"
                                     alt="DevKada CodeKada Hackathon"
@@ -79,7 +79,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/sap-cert-e2e.png"
                                     alt="SAP Certified"
@@ -95,7 +95,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/cyber-coa.png"
                                     alt="Cybersecurity"
@@ -118,7 +118,7 @@ export default function Education() {
 
                     <div className="grid md:grid-cols-3 gap-6">
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/intro-abap-fundamentals-cc.png"
                                     alt="Intoducing ABAP"
@@ -134,7 +134,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/deepening-abap-cc.png"
                                     alt="Deepening ABAP"
@@ -150,7 +150,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/learning-abap-cc.png"
                                     alt="Learning ABAP"
@@ -166,7 +166,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/clean-core-cc.png"
                                     alt="Clean Core"
@@ -182,7 +182,7 @@ export default function Education() {
                         </Card>
                         
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/exploring-btp-cc.png"
                                     alt="Exploring BTP"
@@ -198,7 +198,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full  rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/exploring-cc.png"
                                     alt="Exploring End-to-End"
@@ -214,7 +214,7 @@ export default function Education() {
                         </Card>
 
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full  rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/systems-cc.png"
                                     alt="Systems Admin"
@@ -230,7 +230,7 @@ export default function Education() {
                         </Card>
                         
                         <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full h-full rounded-xl overflow-hidden">
+                            <div className="relative w-full  rounded-xl overflow-hidden">
                                 <ImageModal
                                     src="/media/java-cc.png"
                                     alt="Java fundamentals"

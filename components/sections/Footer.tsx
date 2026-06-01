@@ -8,7 +8,7 @@ import { HiOutlineMail } from "react-icons/hi";
 export default function Footer() {
   return (
     <div className="h-20 border-t">
-        <section className="h-full max-w-7xl mx-auto px-5 flex items-center justify-between">
+        <section className="h-full max-w-6xl mx-auto px-5 flex items-center justify-between">
             <div className="text-sm text-muted-foreground">
                 @ 2026 Cyril Bautista.
             </div>

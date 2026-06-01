@@ -127,7 +127,7 @@ section {
 }
 
 .section {
-  max-width: var(--container-7xl);
+  max-width: var(--container-6xl);
   margin-inline: auto;
   padding: calc(var(--spacing) * 5);
   padding-block: calc(var(--spacing) * 3);
