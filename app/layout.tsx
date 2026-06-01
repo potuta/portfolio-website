@@ -7,6 +7,7 @@ import { Navbar } from "@/components/blocks/navbar";
 import Footer from "@/components/sections/Footer";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/next";
+import { Particles } from "@/components/background/particles";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -39,13 +40,14 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
             <div className="sticky top-0 z-100">
               <Navbar />
             </div>
+            <Particles />
             {children}
             <Analytics />
         <footer>

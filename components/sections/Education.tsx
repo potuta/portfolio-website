@@ -6,7 +6,7 @@ import { ImageModal } from "../modals/image-modal";
 
 export default function Education() {
   return (
-    <div className="bg-accent">
+    <div className="bg-accent/30">
         <section id="education" className="section flex items-center justify-center">
             <div className="mx-auto w-full mt-16 mb-16">
                 <section className="space-y-6">
