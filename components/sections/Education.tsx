@@ -65,7 +65,7 @@ export default function Education() {
                         <Card className="rounded-2xl shadow p-8 gap-4">
                             <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
-                                    src="/media/accenture-coc.jpg"
+                                    src="/media/accenture-coc.JPG"
                                     alt="OJT COC"
                                 />
                             </div>
