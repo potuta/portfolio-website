@@ -49,6 +49,38 @@ export default function Education() {
                         <Card className="rounded-2xl shadow p-8 gap-4">
                             <div className="relative w-full rounded-xl overflow-hidden">
                                 <ImageModal
+                                    src="/media/sap-cert-e2e.png"
+                                    alt="SAP Certified"
+                                />
+                            </div>
+
+                            <div className="md:text-xl font-bold mt-3 text-center">
+                                <p className="text-muted-foreground text-sm">
+                                    2026
+                                </p>
+                                SAP Certified - Implementation Consultant
+                            </div>
+                        </Card>
+
+                        <Card className="rounded-2xl shadow p-8 gap-4">
+                            <div className="relative w-full rounded-xl overflow-hidden">
+                                <ImageModal
+                                    src="/media/accenture-coc.jpg"
+                                    alt="OJT COC"
+                                />
+                            </div>
+
+                            <div className="md:text-xl font-bold mt-3 text-center">
+                                <p className="text-muted-foreground text-sm">
+                                    2026
+                                </p>
+                                Accenture Technology Academy
+                            </div>
+                        </Card>
+
+                        <Card className="rounded-2xl shadow p-8 gap-4">
+                            <div className="relative w-full rounded-xl overflow-hidden">
+                                <ImageModal
                                     src="/media/ojt-coc.png"
                                     alt="OJT COC"
                                 />
@@ -58,7 +90,7 @@ export default function Education() {
                                 <p className="text-muted-foreground text-sm">
                                     2026
                                 </p>
-                                STI On-The-Job Training Certification of Completion
+                                STI On-The-Job Training 
                             </div>
                         </Card>
 
@@ -74,23 +106,7 @@ export default function Education() {
                                 <p className="text-muted-foreground text-sm">
                                     2026
                                 </p>
-                                DevKada - CodeKada Hackathon Certificate of Participation
-                            </div>
-                        </Card>
-
-                        <Card className="rounded-2xl shadow p-8 gap-4">
-                            <div className="relative w-full rounded-xl overflow-hidden">
-                                <ImageModal
-                                    src="/media/sap-cert-e2e.png"
-                                    alt="SAP Certified"
-                                />
-                            </div>
-
-                            <div className="md:text-xl font-bold mt-3 text-center">
-                                <p className="text-muted-foreground text-sm">
-                                    2026
-                                </p>
-                                SAP Certified - Implementation Consultant
+                                DevKada - CodeKada Hackathon
                             </div>
                         </Card>
 
